@@ -1,0 +1,261 @@
+/*
+Author: Kylee Gustafson
+Date: February 19, 2026
+File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, h2, h3, h4, div, img, ul, li, p, iframe {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Body */
+body {
+	background-color: #f7d6df;
+}
+
+/* Images */
+img {
+	max-width: 100%;
+	display: block;
+	border-radius: 8px;
+}
+
+/* Header */
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #2b2b2b;
+	height: auto;
+	padding: 1em 0;
+}
+
+header img {
+	max-height: 160px;
+	width: auto;
+	margin: 0 auto;
+}
+
+/* Navigation */
+nav {
+	padding: 1%;
+	margin-bottom: 1%;
+	background-color: #2b2b2b;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: center;
+}
+
+nav li {
+	font-size: 1.5em;
+	font-family: "Francois One", sans-serif;
+	border-top: 1px solid #ffffff;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a {
+	display: block;
+	color: #ffffff;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+/* Mobile / Desktop display control */
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+/* Main content */
+main {
+	background-color: #fff5f8;
+	padding: 2%;
+	font-size: 1.15em;
+	font-family: "Roboto Slab", serif;
+	color: #1f1f1f;
+}
+
+main h2, main h3, main h4 {
+	color: #2b2b2b;
+}
+
+.hours {
+	margin-left: 10%;
+}
+
+/* Accent text */
+.action {
+	font-size: 1.35em;
+	color: #a13d5c;
+	font-weight: bold;
+}
+
+/* Contact Page */
+#contact {
+	text-align: center;
+}
+
+.tel-link {
+	background-color: #5a5a5a;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+#contact .contact-email-link {
+	color: #a13d5c;
+	text-decoration: none;
+}
+
+.map {
+	border: 2px solid #2b2b2b;
+	width: 95%;
+	height: 50%;
+	border-radius: 8px;
+}
+
+/* Footer */
+footer {
+	background-color: #2b2b2b;
+}
+
+footer p {
+	font-size: 0.75em;
+	text-align: center;
+	color: #ffffff;
+	padding: 0 1em;
+}
+
+footer p a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+/* Tablet View */
+@media screen and (min-width: 630px), print {
+
+.tablet-desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	header {
+		position: static;
+		padding-bottom: 2%;
+	}
+
+	nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #ffffff;
+	}
+
+	nav li:last-child {
+		border-right: none;
+	}
+
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+
+	.tel-num {
+		font-size: 1.25em;
+	}
+
+	.map {
+		width: 600px;
+		height: 450px;
+	}
+}
+
+/* Desktop View */
+@media screen and (min-width: 1015px), print {
+
+	header {
+		width: 25%;
+		float: left;
+		padding: 0.75em 0;
+	}
+
+	nav {
+		float: right;
+		width: 70%;
+		margin: 0;
+		padding: 4.5em 1em 0 0;
+		background-color: #2b2b2b;
+	}
+
+	nav ul {
+		text-align: right;
+	}
+
+	nav li {
+		border: none;
+	}
+
+	nav li a {
+		padding: 0.5em 1em;
+	}
+
+	nav li a:hover {
+		color: #2b2b2b;
+		background-color: #fff5f8;
+	}
+
+	main {
+		clear: left;
+	}
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1921px) {
+
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+
+/* Print */
+@media print {
+
+	body {
+		background-color: #ffffff;
+		color: #000000;
+	}
+
+	nav, header, footer {
+		background-color: #ffffff;
+	}
+
+	nav li a, footer p, footer p a {
+		color: #000000;	
+		}
+}
